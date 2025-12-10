@@ -1,13 +1,21 @@
 package com.assesment.inventory_management.dto;
 
+import jakarta.validation.constraints.DecimalMin;
+import jakarta.validation.constraints.Min;
+
+import java.math.BigDecimal;
+
 public class ProductRequest {
     private String name;
-    private Integer price;
+
+    @DecimalMin(value = "0.01")
+    private BigDecimal price;
+    @Min(value = 0)
     private Integer quantity;
 
     private Long categoryId;
     public ProductRequest() {}
-    public ProductRequest(String name, int price, int quantity, Long categoryId) {
+    public ProductRequest(String name, BigDecimal price, int quantity, Long categoryId) {
         this.name = name;
         this.price = price;
         this.quantity = quantity;
@@ -22,11 +30,11 @@ public class ProductRequest {
         this.name = name;
     }
 
-    public Integer getPrice() {
+    public BigDecimal getPrice() {
         return price;
     }
 
-    public void setPrice(int price) {
+    public void setPrice(BigDecimal price) {
         this.price = price;
     }
 

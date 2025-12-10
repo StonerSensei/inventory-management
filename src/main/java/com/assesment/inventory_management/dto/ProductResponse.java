@@ -1,11 +1,12 @@
 package com.assesment.inventory_management.dto;
 
+import java.math.BigDecimal;
 import java.time.LocalDateTime;
 
 public class ProductResponse {
     private Long id;
     private String name;
-    private Integer price;
+    private BigDecimal price;
     private Integer quantity;
     private Long categoryId;
     private String categoryName;
@@ -14,7 +15,7 @@ public class ProductResponse {
 
     public ProductResponse() {}
 
-    public ProductResponse(Long id, String name, int price, int quantity, Long categoryId, String categoryName, LocalDateTime createdAt, LocalDateTime updatedAt){
+    public ProductResponse(Long id, String name, BigDecimal price, Integer quantity, Long categoryId, String categoryName, LocalDateTime createdAt, LocalDateTime updatedAt){
         this.id = id;
         this.name = name;
         this.price = price;
@@ -41,11 +42,11 @@ public class ProductResponse {
         this.name = name;
     }
 
-    public Integer getPrice() {
+    public BigDecimal getPrice() {
         return price;
     }
 
-    public void setPrice(int price) {
+    public void setPrice(BigDecimal price) {
         this.price = price;
     }
 

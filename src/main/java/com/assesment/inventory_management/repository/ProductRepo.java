@@ -14,7 +14,7 @@ public interface ProductRepo extends JpaRepository<Product, Long> {
 
     List<Product> findByCategoryId(Long categoryId);
 
-    List<Product> findByPriceBetween(int minPrice, int maxPrice); // product by range
+    List<Product> findByPriceBetween(BigDecimal minPrice, BigDecimal maxPrice); // product by range
 
-    List<Product> findByCategoryIdAndPriceBetween(Long categoryId, int minPrice, int maxPrice); // product in category range
+    List<Product> findByCategoryIdAndPriceBetween(Long categoryId, BigDecimal minPrice, BigDecimal maxPrice); // product in category range
 }
