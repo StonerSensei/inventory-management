@@ -64,7 +64,7 @@ API Endpoints and Request
       "categoryId": 1
     }
 6. Get Product by ID
-   GET /api/products/1
+GET /api/products/1
 7. Get All Products
    GET /api/products
 8. Get Products by Category
