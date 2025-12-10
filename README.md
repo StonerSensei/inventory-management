@@ -48,12 +48,16 @@ API Endpoints and Request
       "description": "Electronic devices and accessories"
     }
 2. Get Category by ID
+
    GET /api/categories/1
 3. Get All Categories
+
    GET /api/categories
 4. Delete Category
+
    DELETE /api/categories/1
 5. Product Endponts
+
     POST /api/products
     Content-Type: application/json
     
@@ -70,12 +74,16 @@ API Endpoints and Request
 
    GET /api/products
 9. Get Products by Category
+
    GET /api/products?categoryId=1
 10. Get Products by Price Range
+
     GET /api/products?minPrice=1000&maxPrice=50000
 11. Get Products by Category and Price Range
+
     GET /api/products?categoryId=1&minPrice=1000&maxPrice=50000
 12. Update Product
+
     PUT /api/products/1
     Content-Type: application/json
     
