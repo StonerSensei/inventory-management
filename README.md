@@ -5,55 +5,9 @@ Tech Stack
 Java 17, Spring Boot, Spring Web, Spring Data JPA, H2 Database (in-memory), Bean Validation (Jakarta Validation)
 
 Project Structure
-[parth@archlinux inventory-management]$ tree
-.
-├── HELP.md
-├── mvnw
-├── mvnw.cmd
-├── pom.xml
-├── src
-│   ├── main
-│   │   ├── java
-│   │   │   └── com
-│   │   │       └── assesment
-│   │   │           └── inventory_management
-│   │   │               ├── controller
-│   │   │               │   ├── CategoryController.java
-│   │   │               │   └── ProductController.java
-│   │   │               ├── dto
-│   │   │               │   ├── CategoryRequest.java
-│   │   │               │   ├── CategoryResponse.java
-│   │   │               │   ├── ErrorResponse.java
-│   │   │               │   ├── ProductRequest.java
-│   │   │               │   └── ProductResponse.java
-│   │   │               ├── exception
-│   │   │               │   ├── CategoryNotFoundException.java
-│   │   │               │   ├── DuplicateNameException.java
-│   │   │               │   ├── GlobalExceptionHandler.java
-│   │   │               │   └── ProductNotFoundException.java
-│   │   │               ├── InventoryManagementApplication.java
-│   │   │               ├── model
-│   │   │               │   ├── Category.java
-│   │   │               │   └── Product.java
-│   │   │               ├── repository
-│   │   │               │   ├── CategoryRepo.java
-│   │   │               │   └── ProductRepo.java
-│   │   │               └── service
-│   │   │                   ├── CategoryService.java
-│   │   │                   └── ProductService.java
-│   │   └── resources
-│   │       ├── application.properties
-│   │       ├── static
-│   │       └── templates
-│   └── test
-│       └── java
-│           └── com
-│               └── assesment
-│                   └── inventory_management
-│                       └── InventoryManagementApplicationTests.java
 
+<img width="527" height="727" alt="image" src="https://github.com/user-attachments/assets/1ae81ee2-4a0b-4901-add2-ce1cfe7e5c7f" />
 
-34 directories, 43 files
 
 Prerequisites: JDK 17+, Maven 3.8+
 
