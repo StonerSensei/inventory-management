@@ -18,9 +18,9 @@ public class Product {
     private String name;
 
     @Column(nullable = false)
-    private int price;
+    private Integer price;
 
-    private int quantity;
+    private Integer quantity;
 
     @ManyToOne(fetch = FetchType.LAZY)
     @JoinColumn(name = "category_id", nullable = false)
@@ -36,7 +36,7 @@ public class Product {
 
     public Product() {    }
 
-    public Product(String name, int price, Integer quantity, Category category) {
+    public Product(String name, Integer price, Integer quantity, Category category) {
         this.name = name;
         this.price = price;
         this.quantity = quantity;
@@ -59,7 +59,7 @@ public class Product {
         this.name = name;
     }
 
-    public int getPrice() {
+    public Integer getPrice() {
         return price;
     }
 

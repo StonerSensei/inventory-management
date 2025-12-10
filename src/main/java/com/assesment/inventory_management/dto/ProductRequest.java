@@ -2,8 +2,8 @@ package com.assesment.inventory_management.dto;
 
 public class ProductRequest {
     private String name;
-    private int price;
-    private int quantity;
+    private Integer price;
+    private Integer quantity;
 
     private Long categoryId;
     public ProductRequest() {}
@@ -22,7 +22,7 @@ public class ProductRequest {
         this.name = name;
     }
 
-    public int getPrice() {
+    public Integer getPrice() {
         return price;
     }
 

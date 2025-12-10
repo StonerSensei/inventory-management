@@ -5,8 +5,8 @@ import java.time.LocalDateTime;
 public class ProductResponse {
     private Long id;
     private String name;
-    private int price;
-    private int quantity;
+    private Integer price;
+    private Integer quantity;
     private Long categoryId;
     private String categoryName;
     private LocalDateTime createdAt;
@@ -41,7 +41,7 @@ public class ProductResponse {
         this.name = name;
     }
 
-    public int getPrice() {
+    public Integer getPrice() {
         return price;
     }
 
