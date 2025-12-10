@@ -64,16 +64,18 @@ API Endpoints and Request
       "categoryId": 1
     }
 6. Get Product by ID
-GET /api/products/1
-7. Get All Products
+   
+   GET /api/products/1
+8. Get All Products
+
    GET /api/products
-8. Get Products by Category
+9. Get Products by Category
    GET /api/products?categoryId=1
-9. Get Products by Price Range
+10. Get Products by Price Range
     GET /api/products?minPrice=1000&maxPrice=50000
-10. Get Products by Category and Price Range
+11. Get Products by Category and Price Range
     GET /api/products?categoryId=1&minPrice=1000&maxPrice=50000
-11. Update Product
+12. Update Product
     PUT /api/products/1
     Content-Type: application/json
     
